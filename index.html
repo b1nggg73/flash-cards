@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="flash-cards.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>FlashCards</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header">
+          <h1 class="header-title">FlashCards</h1>
+          <div class="button-managers-cards">
+            <button class="add-cards">Add cards</button>
+            <button class="del-cards">Delete all cards</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container">
+        <div class="create-flash-cards">
+          <div class="question-flashcards">
+            <label>
+              Question
+              <input type="text" placeholder="question" id="question" />
+            </label>
+          </div>
+          <div class="answer-flashcards">
+            <label>
+              Answer
+              <input type="text" placeholder="answer" id="answer" />
+            </label>
+          </div>
+          <div class="button-create-flash-cards">
+            <button class="save-cards">Save</button>
+            <button class="close-card">Close</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="flashcards"></div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

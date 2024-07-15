@@ -1,0 +1,192 @@
+/* reset css for https://medium.com/@stasonmars/%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-%D1%81%D0%B1%D1%80%D0%BE%D1%81-css-f5816963c82b */
+
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* reset css for https://medium.com/@stasonmars/%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B8%CC%86-%D1%81%D0%B1%D1%80%D0%BE%D1%81-css-f5816963c82b */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+header {
+  background-color: #edede3;
+  padding: 20px;
+}
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title {
+  cursor: pointer;
+}
+.button-managers-cards {
+  display: flex;
+  gap: 30px;
+}
+.button-managers-cards button {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px;
+  color: #fff;
+  border-radius: 6px;
+}
+.create-flash-cards {
+  display: none;
+  padding: 30px;
+  box-shadow: 10px 5px 5px #7b7b7b;
+  flex-direction: column;
+  gap: 10px;
+  width: 670px;
+  color: #fff;
+  margin: 30px auto;
+  background-color: #000;
+  border-radius: 5px;
+}
+.question-flashcards label {
+  display: flex;
+  font-size: 22px;
+  font-weight: 600;
+  flex-direction: column;
+}
+.answer-flashcards label {
+  display: flex;
+  font-size: 22px;
+  font-weight: 600;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.question-flashcards label input {
+  width: 600px;
+}
+.answer-flashcards label input {
+  width: 600px;
+}
+.button-create-flash-cards button {
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 10px 5px 10px;
+  color: #000;
+  border-radius: 6px;
+}
+
+.flashcards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.flashcard {
+  background-color: #000;
+  position: relative;
+  word-wrap: break-word;
+  color: #fff;
+  width: 370px;
+  min-height: 200px;
+  min-height: 200px;
+  margin: 30px;
+  padding: 30px;
+  font-size: 21px;
+  border-radius: 10px;
+}
+.answer {
+  display: none;
+}
+.del-card {
+  height: 15px;
+  cursor: pointer;
+  width: 15px;
+  background-color: #ff0000;
+  border-radius: 100%;
+  position: absolute;
+  top: 10px;
+  left: 345px;
+}
